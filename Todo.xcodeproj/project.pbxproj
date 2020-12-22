@@ -15,6 +15,8 @@
 		B9057820259214B500262100 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B905781E259214B500262100 /* LaunchScreen.storyboard */; };
 		B905782B259214B500262100 /* TodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B905782A259214B500262100 /* TodoTests.swift */; };
 		B9057836259214B500262100 /* TodoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9057835259214B500262100 /* TodoUITests.swift */; };
+		B905784E25921FEE00262100 /* NavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = B905784D25921FEE00262100 /* NavigationBar.xib */; };
+		B90578532592200300262100 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90578522592200300262100 /* NavigationBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		B9057831259214B500262100 /* TodoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9057835259214B500262100 /* TodoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoUITests.swift; sourceTree = "<group>"; };
 		B9057837259214B500262100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B905784D25921FEE00262100 /* NavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationBar.xib; sourceTree = "<group>"; };
+		B90578522592200300262100 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +103,12 @@
 		B9057812259214B100262100 /* Todo */ = {
 			isa = PBXGroup;
 			children = (
+				B905784C25921FC800262100 /* Navigation */,
 				B9057813259214B100262100 /* AppDelegate.swift */,
-				B9057815259214B100262100 /* SceneDelegate.swift */,
 				B9057817259214B100262100 /* ViewController.swift */,
 				B9057819259214B100262100 /* Main.storyboard */,
 				B905781C259214B500262100 /* Assets.xcassets */,
+				B9057815259214B100262100 /* SceneDelegate.swift */,
 				B905781E259214B500262100 /* LaunchScreen.storyboard */,
 				B9057821259214B500262100 /* Info.plist */,
 			);
@@ -126,6 +131,15 @@
 				B9057837259214B500262100 /* Info.plist */,
 			);
 			path = TodoUITests;
+			sourceTree = "<group>";
+		};
+		B905784C25921FC800262100 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				B905784D25921FEE00262100 /* NavigationBar.xib */,
+				B90578522592200300262100 /* NavigationBar.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +248,7 @@
 				B9057820259214B500262100 /* LaunchScreen.storyboard in Resources */,
 				B905781D259214B500262100 /* Assets.xcassets in Resources */,
 				B905781B259214B100262100 /* Main.storyboard in Resources */,
+				B905784E25921FEE00262100 /* NavigationBar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +276,7 @@
 				B9057818259214B100262100 /* ViewController.swift in Sources */,
 				B9057814259214B100262100 /* AppDelegate.swift in Sources */,
 				B9057816259214B100262100 /* SceneDelegate.swift in Sources */,
+				B90578532592200300262100 /* NavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
