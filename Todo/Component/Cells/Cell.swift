@@ -17,7 +17,7 @@ class Cells: UITableViewCell {
         return view
     }()
     
-    let dayLabel: UILabel = {
+    let label: UILabel = {
         let label = UILabel()
         label.text = "Day 1"
         label.textColor = UIColor.white
@@ -37,7 +37,7 @@ class Cells: UITableViewCell {
     
     func setupView() {
         addSubview(cellView)
-        cellView.addSubview(dayLabel)
+        cellView.addSubview(label)
         self.selectionStyle = .none
         
         NSLayoutConstraint.activate([
@@ -48,10 +48,10 @@ class Cells: UITableViewCell {
         ])
         
         
-        dayLabel.heightAnchor.constraint(equalToConstant: 200).isActive = true
-        dayLabel.widthAnchor.constraint(equalToConstant: 200).isActive = true
-        dayLabel.centerYAnchor.constraint(equalTo: cellView.centerYAnchor).isActive = true
-        dayLabel.leftAnchor.constraint(equalTo: cellView.leftAnchor, constant: 20).isActive = true
+        label.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        label.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        label.centerYAnchor.constraint(equalTo: cellView.centerYAnchor).isActive = true
+        label.leftAnchor.constraint(equalTo: cellView.leftAnchor, constant: 20).isActive = true
         
     }
     

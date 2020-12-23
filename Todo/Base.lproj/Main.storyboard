@@ -52,6 +52,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house" id="rwI-DN-BSN"/>
                     <connections>
+                        <outlet property="NavBar" destination="QTD-wt-7Fd" id="Y0H-zm-BXQ"/>
                         <outlet property="tableView" destination="R4V-9J-HX0" id="G87-w6-h6P"/>
                     </connections>
                 </viewController>
@@ -62,17 +63,11 @@
         <!--Routine-->
         <scene sceneID="Ia2-gv-2lb">
             <objects>
-                <viewController id="HW2-g1-efE" sceneMemberID="viewController">
+                <viewController id="HW2-g1-efE" customClass="Routine" customModule="Todo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lIA-AW-owk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Routine Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLP-7N-pCm">
-                                <rect key="frame" x="163" y="438" width="101" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aj9-pg-JLm" customClass="NavigationBar" customModule="Todo" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -80,19 +75,37 @@
                                     <constraint firstAttribute="height" constant="60" id="hxC-7Z-5KB"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JbD-Th-nt8">
+                                <rect key="frame" x="0.0" y="112" width="414" height="701"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="5RJ-LE-fts">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5RJ-LE-fts" id="t8X-EH-njG">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Zs1-yQ-IZf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="iLP-7N-pCm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Zs1-yQ-IZf" secondAttribute="leading" id="EhV-dP-Cdg"/>
-                            <constraint firstItem="Zs1-yQ-IZf" firstAttribute="bottom" secondItem="iLP-7N-pCm" secondAttribute="bottom" constant="354" id="btZ-7I-lD8"/>
+                            <constraint firstItem="JbD-Th-nt8" firstAttribute="trailing" secondItem="Zs1-yQ-IZf" secondAttribute="trailing" id="IaO-ae-YsJ"/>
+                            <constraint firstItem="JbD-Th-nt8" firstAttribute="bottom" secondItem="Zs1-yQ-IZf" secondAttribute="bottom" id="R3d-dN-2ea"/>
+                            <constraint firstItem="JbD-Th-nt8" firstAttribute="top" secondItem="Aj9-pg-JLm" secondAttribute="bottom" constant="8" symbolic="YES" id="U6W-hQ-wT9"/>
                             <constraint firstItem="Aj9-pg-JLm" firstAttribute="top" secondItem="Zs1-yQ-IZf" secondAttribute="top" id="c0t-AB-9BA"/>
                             <constraint firstItem="Aj9-pg-JLm" firstAttribute="centerX" secondItem="lIA-AW-owk" secondAttribute="centerX" id="c2Z-jc-aUW"/>
-                            <constraint firstItem="Zs1-yQ-IZf" firstAttribute="trailing" secondItem="iLP-7N-pCm" secondAttribute="trailing" constant="150" id="hjl-qR-kPe"/>
                             <constraint firstItem="Aj9-pg-JLm" firstAttribute="leading" secondItem="Zs1-yQ-IZf" secondAttribute="leading" id="mSI-QX-oAj"/>
+                            <constraint firstItem="JbD-Th-nt8" firstAttribute="leading" secondItem="Zs1-yQ-IZf" secondAttribute="leading" id="wZY-MZ-SWH"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Routine" image="arrow.up.right.circle.fill" catalog="system" id="Jkr-lm-P8c"/>
+                    <connections>
+                        <outlet property="tableView" destination="JbD-Th-nt8" id="gpn-BB-n2a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wy4-95-8cu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
