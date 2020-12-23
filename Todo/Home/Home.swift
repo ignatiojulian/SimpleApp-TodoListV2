@@ -37,7 +37,7 @@ class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
         //        return cell
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath) as! Cells
         cell.backgroundColor = UIColor.white
-        cell.dayLabel.text = "Day \(indexPath.row+1)"
+        cell.label.text = "Day \(indexPath.row+1)"
         
         return cell
     }
