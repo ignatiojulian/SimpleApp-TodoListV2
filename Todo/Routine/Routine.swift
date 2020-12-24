@@ -10,11 +10,13 @@ import UIKit
 class Routine: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
    
+    @IBOutlet weak var NavBar: NavigationBar!
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
+        NavBar.title = "Todoey | Routine"
     }
     
     func setupTableView() {

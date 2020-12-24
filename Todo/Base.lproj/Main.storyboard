@@ -104,6 +104,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Routine" image="heart.fill" catalog="system" id="Jkr-lm-P8c"/>
                     <connections>
+                        <outlet property="NavBar" destination="Aj9-pg-JLm" id="sX1-0y-j60"/>
                         <outlet property="tableView" destination="JbD-Th-nt8" id="gpn-BB-n2a"/>
                     </connections>
                 </viewController>

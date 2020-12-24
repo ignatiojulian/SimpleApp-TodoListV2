@@ -15,7 +15,7 @@ class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
-        NavBar.title = "Todoey"
+        NavBar.title = "Todoey | Home"
     }
     
     func setupTableView() {
