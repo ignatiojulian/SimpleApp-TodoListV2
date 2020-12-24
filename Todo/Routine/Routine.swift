@@ -1,21 +1,20 @@
 //
-//  ViewController.swift
+//  Routine.swift
 //  Todo
 //
-//  Created by Ignatio Julian on 12/22/20.
+//  Created by Ignatio Julian on 12/24/20.
 //
 
 import UIKit
 
-class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class Routine: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet weak var NavBar: NavigationBar!
+   
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
-        NavBar.title = "Todoey"
     }
     
     func setupTableView() {
@@ -39,11 +38,9 @@ class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
         //        return cell
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath) as! Cells
         cell.backgroundColor = UIColor.white
-        cell.label.text = "Day \(indexPath.row+5)"
+        cell.label.text = "Day \(indexPath.row+1)"
         
-        print("You selected cell #\(indexPath.row)!")
         return cell
-        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -51,5 +48,4 @@ class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
 }
-
 
