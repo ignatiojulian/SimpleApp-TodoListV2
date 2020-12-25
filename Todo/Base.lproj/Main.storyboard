@@ -226,6 +226,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGh-1P-qVJ">
                                         <rect key="frame" x="0.0" y="260" width="374" height="110"/>
                                         <state key="normal" title="Login"/>
+                                        <connections>
+                                            <action selector="login:" destination="Ib5-WY-kxV" eventType="touchUpInside" id="LD8-Yl-qs8"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -257,6 +260,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TAS-1V-4SP"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="CC5-cP-TDo" id="eWy-tN-v3T"/>
+                        <outlet property="loginButton" destination="rGh-1P-qVJ" id="MF8-ZH-kyG"/>
+                        <outlet property="passwordTextField" destination="eBc-dG-mo9" id="QpW-1p-hJn"/>
+                        <outlet property="statusLabel" destination="ZHV-LW-1iy" id="p2y-wu-R9a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x1b-2n-B2y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
