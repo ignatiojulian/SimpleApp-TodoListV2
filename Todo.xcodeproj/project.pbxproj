@@ -26,6 +26,7 @@
 		B991FCFC2595780F00617193 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B991FCFB2595780F00617193 /* LoginViewController.swift */; };
 		B991FD292595C3EC00617193 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B991FD282595C3EC00617193 /* GoogleService-Info.plist */; };
 		B991FD922595D57F00617193 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B991FD912595D57F00617193 /* Validation.swift */; };
+		B991FD9B2595EFE500617193 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B991FD9A2595EFE500617193 /* ViewController.swift */; };
 		D807C72124C517A733F5571B /* Pods_TodoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C8814BB7046E375176AC33 /* Pods_TodoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,7 @@
 		B991FCFB2595780F00617193 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B991FD282595C3EC00617193 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B991FD912595D57F00617193 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		B991FD9A2595EFE500617193 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C9C8814BB7046E375176AC33 /* Pods_TodoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D1B3F282A50091FD9AF034 /* Pods-Todo-TodoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todo-TodoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Todo-TodoUITests/Pods-Todo-TodoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E070FD4859B996FF87E9159E /* Pods-TodoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoTests.debug.xcconfig"; path = "Target Support Files/Pods-TodoTests/Pods-TodoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 				B95D95CB25923C99006A373B /* Home */,
 				B9057813259214B100262100 /* AppDelegate.swift */,
 				B9057819259214B100262100 /* Main.storyboard */,
+				B991FD9A2595EFE500617193 /* ViewController.swift */,
 				B905781C259214B500262100 /* Assets.xcassets */,
 				B9057815259214B100262100 /* SceneDelegate.swift */,
 				B905781E259214B500262100 /* LaunchScreen.storyboard */,
@@ -495,6 +498,7 @@
 				B902BB1325941A4F0082A6DA /* Profile.swift in Sources */,
 				B9057818259214B100262100 /* Home.swift in Sources */,
 				B991FCF7259577DC00617193 /* SignUpViewController.swift in Sources */,
+				B991FD9B2595EFE500617193 /* ViewController.swift in Sources */,
 				B9057814259214B100262100 /* AppDelegate.swift in Sources */,
 				B902BAF62593AA290082A6DA /* Routine.swift in Sources */,
 				B902BAE425939F6A0082A6DA /* Cell.swift in Sources */,
