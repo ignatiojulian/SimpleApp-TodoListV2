@@ -12,6 +12,7 @@ class Routine: UIViewController, UITableViewDelegate, UITableViewDataSource {
    
     @IBOutlet weak var NavBar: NavigationBar!
     @IBOutlet weak var tableView: UITableView!
+    var cellProperties = Cells()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,7 @@ class Routine: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.register(Cells.self, forCellReuseIdentifier: "cellId")
         
         view.addSubview(tableView)
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

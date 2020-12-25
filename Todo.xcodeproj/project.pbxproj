@@ -20,6 +20,9 @@
 		B9057836259214B500262100 /* TodoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9057835259214B500262100 /* TodoUITests.swift */; };
 		B905784E25921FEE00262100 /* NavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = B905784D25921FEE00262100 /* NavigationBar.xib */; };
 		B90578532592200300262100 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90578522592200300262100 /* NavigationBar.swift */; };
+		B991FCE1259561BF00617193 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B991FCE0259561BF00617193 /* GoogleService-Info.plist */; };
+		B991FCF7259577DC00617193 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B991FCF6259577DC00617193 /* SignUpViewController.swift */; };
+		B991FCFC2595780F00617193 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B991FCFB2595780F00617193 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		B9057837259214B500262100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B905784D25921FEE00262100 /* NavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationBar.xib; sourceTree = "<group>"; };
 		B90578522592200300262100 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		B991FCE0259561BF00617193 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B991FCF6259577DC00617193 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B991FCFB2595780F00617193 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +149,7 @@
 				B9057815259214B100262100 /* SceneDelegate.swift */,
 				B905781E259214B500262100 /* LaunchScreen.storyboard */,
 				B9057821259214B500262100 /* Info.plist */,
+				B991FCE0259561BF00617193 /* GoogleService-Info.plist */,
 			);
 			path = Todo;
 			sourceTree = "<group>";
@@ -177,6 +184,8 @@
 		B95D95CB25923C99006A373B /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				B991FCF6259577DC00617193 /* SignUpViewController.swift */,
+				B991FCFB2595780F00617193 /* LoginViewController.swift */,
 				B9057817259214B100262100 /* Home.swift */,
 			);
 			path = Home;
@@ -296,6 +305,7 @@
 			files = (
 				B9057820259214B500262100 /* LaunchScreen.storyboard in Resources */,
 				B905781D259214B500262100 /* Assets.xcassets in Resources */,
+				B991FCE1259561BF00617193 /* GoogleService-Info.plist in Resources */,
 				B905781B259214B100262100 /* Main.storyboard in Resources */,
 				B905784E25921FEE00262100 /* NavigationBar.xib in Resources */,
 			);
@@ -322,8 +332,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B991FCFC2595780F00617193 /* LoginViewController.swift in Sources */,
 				B902BB1325941A4F0082A6DA /* Profile.swift in Sources */,
 				B9057818259214B100262100 /* Home.swift in Sources */,
+				B991FCF7259577DC00617193 /* SignUpViewController.swift in Sources */,
 				B9057814259214B100262100 /* AppDelegate.swift in Sources */,
 				B902BAF62593AA290082A6DA /* Routine.swift in Sources */,
 				B902BAE425939F6A0082A6DA /* Cell.swift in Sources */,
