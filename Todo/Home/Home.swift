@@ -34,9 +34,6 @@ class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // 2
-        //        let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath) as! Cells
-        //        cell.backgroundColor = UIColor.black
-        //        return cell
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath) as! Cells
         cell.backgroundColor = UIColor.white
         cell.label.text = "Day \(indexPath.row+5)"

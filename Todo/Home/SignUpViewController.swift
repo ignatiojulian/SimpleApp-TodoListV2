@@ -28,8 +28,6 @@ class SignUpViewController: UIViewController {
         
         let alertError = UIAlertController(title: "Error", message: "Something Went Wrong", preferredStyle: UIAlertController.Style.alert)
         alertError.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
-//        let alertSuccess = UIAlertController(title: "Succes", message: "Yeay! Congratulation your account has been created! 🥳", preferredStyle: UIAlertController.Style.alert)
-//        alertSuccess.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
         
         if(nameTextField.text == nil || nameTextField.text == "" && emailTextField.text == nil || emailTextField.text == "" && passwordTextField.text == nil || passwordTextField.text == "" ){
             self.present(alertError, animated: true, completion: nil)
@@ -43,7 +41,6 @@ class SignUpViewController: UIViewController {
                 }
             }
             print("SUCCESS SIGNUP")
-            
         }
         dismiss(animated: true, completion: nil)
     }

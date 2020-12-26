@@ -30,19 +30,21 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         scrollHeight = scrollView.frame.size.height
     }
     
-    func toHome() {
-        let newViewController = Home()
-        self.navigationController?.pushViewController(newViewController, animated: true)
-    }
+    //    func toHome() {
+    //        let newViewController = Home()
+    //        self.navigationController?.pushViewController(newViewController, animated: true)
+    //    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if Auth.auth().currentUser != nil {
-            self.toHome()
-            print("to Home")
-        } else {
-            print("not logged")
-        }
+        
+        //        if Auth.auth().currentUser != nil {
+        //            self.toHome()
+        //            print("to Home")
+        //        } else {
+        //            print("not logged")
+        //        }
+        
         self.view.layoutIfNeeded()
         //to call viewDidLayoutSubviews() and get dynamic width and height of scrollview
         
@@ -115,4 +117,9 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         pageControl?.currentPage = Int(page)
     }
     
+    @IBAction func toLogin(_ sender: Any) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "loginvc")
+        vc.modalPresentationStyle = .overFullScreen
+        self.present(vc, animated: true, completion: nil)
+    }
 }

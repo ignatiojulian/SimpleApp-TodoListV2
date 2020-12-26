@@ -24,22 +24,31 @@ class LoginViewController: UIViewController {
     
     @IBAction func login(_ sender: Any) {
         
+        let alertError = UIAlertController(title: "Error", message: "Something Went Wrong", preferredStyle: UIAlertController.Style.alert)
+        alertError.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+        
         let email = emailTextField.text!
         let password = passwordTextField.text!
         
-        Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
-            guard let strongSelf = self else { return }
-            if(error != nil){
-                strongSelf.statusLabel.text = "Ups! 😟"
-                strongSelf.statusLabel.textColor = .red
+        if(emailTextField.text == nil || emailTextField.text == "" && passwordTextField.text == nil || passwordTextField.text == "" ){
+            self.present(alertError, animated: true, completion: nil)
+        } else {
+            Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
+                guard let strongSelf = self else { return }
+                if(error != nil){
+                    strongSelf.statusLabel.text = "Ups! 😟"
+                    strongSelf.statusLabel.textColor = .red
+                    
+                    return
+                }
+                strongSelf.statusLabel.text = "Enjoy 🥳"
+                strongSelf.statusLabel.textColor = .blue
                 
-                return
+                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "tabbarvc")
+                vc.modalPresentationStyle = .overFullScreen
+                self?.present(vc, animated: true, completion: nil)
             }
-            strongSelf.statusLabel.text = "Enjoy 🥳"
-            strongSelf.statusLabel.textColor = .blue
-        
-            self?.dismiss(animated: false, completion: nil)
+            
         }
-        
     }
 }
