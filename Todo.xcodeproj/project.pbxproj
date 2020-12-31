@@ -28,6 +28,7 @@
 		B991FD922595D57F00617193 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B991FD912595D57F00617193 /* Validation.swift */; };
 		B991FD9B2595EFE500617193 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B991FD9A2595EFE500617193 /* ViewController.swift */; };
 		B991FDA02596CAB900617193 /* Switcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B991FD9F2596CAB800617193 /* Switcher.swift */; };
+		B9C2475B259DC112003E9A75 /* NotesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C2475A259DC112003E9A75 /* NotesModel.swift */; };
 		D807C72124C517A733F5571B /* Pods_TodoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C8814BB7046E375176AC33 /* Pods_TodoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +81,7 @@
 		B991FD912595D57F00617193 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		B991FD9A2595EFE500617193 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B991FD9F2596CAB800617193 /* Switcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switcher.swift; sourceTree = "<group>"; };
+		B9C2475A259DC112003E9A75 /* NotesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NotesModel.swift; path = "../../../../../Desktop/IPA BBA/NotesModel.swift"; sourceTree = "<group>"; };
 		C9C8814BB7046E375176AC33 /* Pods_TodoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D1B3F282A50091FD9AF034 /* Pods-Todo-TodoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todo-TodoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Todo-TodoUITests/Pods-Todo-TodoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E070FD4859B996FF87E9159E /* Pods-TodoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoTests.debug.xcconfig"; path = "Target Support Files/Pods-TodoTests/Pods-TodoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 		B9057812259214B100262100 /* Todo */ = {
 			isa = PBXGroup;
 			children = (
+				B9C24759259DC101003E9A75 /* Model */,
 				B991FD1F2595C17D00617193 /* Utilities */,
 				B95D95DA2592D8FF006A373B /* Component */,
 				B902BB1125941A3A0082A6DA /* Profile */,
@@ -255,6 +258,14 @@
 				B991FD9F2596CAB800617193 /* Switcher.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B9C24759259DC101003E9A75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B9C2475A259DC112003E9A75 /* NotesModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -499,6 +510,7 @@
 			files = (
 				B991FCFC2595780F00617193 /* LoginViewController.swift in Sources */,
 				B902BB1325941A4F0082A6DA /* Profile.swift in Sources */,
+				B9C2475B259DC112003E9A75 /* NotesModel.swift in Sources */,
 				B991FDA02596CAB900617193 /* Switcher.swift in Sources */,
 				B9057818259214B100262100 /* Home.swift in Sources */,
 				B991FCF7259577DC00617193 /* SignUpViewController.swift in Sources */,

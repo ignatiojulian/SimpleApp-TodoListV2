@@ -15,7 +15,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavigationBar" customModule="Todo" customModuleProvider="target">
             <connections>
                 <outlet property="leftButton" destination="unR-Ml-tWu" id="ZvL-cz-0O0"/>
-                <outlet property="rightSecondButton" destination="QFB-fL-7aq" id="oKg-fF-w8g"/>
+                <outlet property="rightFirstButton" destination="QFB-fL-7aq" id="kLd-1b-0tJ"/>
                 <outlet property="titleLabel" destination="shB-5G-YQw" id="S4M-IG-KQv"/>
                 <outlet property="view" destination="AB3-JX-r91" id="1KQ-qZ-z9c"/>
             </connections>

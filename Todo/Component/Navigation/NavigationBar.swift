@@ -13,10 +13,10 @@ final class NavigationBar: UIView {
     private static let NIB_NAME = "NavigationBar"
     
     @IBOutlet private var view: UIView!
-    @IBOutlet private weak var leftButton: UIButton!
     @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var leftButton: UIButton!
     @IBOutlet private weak var rightFirstButton: UIButton!
-    @IBOutlet private weak var rightSecondButton: UIButton!
+    
     
     var title: String = "" {
         didSet {

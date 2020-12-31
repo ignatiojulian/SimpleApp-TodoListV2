@@ -10,6 +10,7 @@ target 'Todo' do
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
   pod 'Firebase/Analytics'
+  pod 'Firebase/Database'
 
   target 'TodoTests' do
     inherit! :search_paths
